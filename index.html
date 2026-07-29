@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Qinmo</title>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="/img/favicon.png" /> <!-- TODO replace picture -->
+    <script src="/jquery-4.0.0.min.js"></script>
+    <script>
+        $(function () {
+            var includes = $("[data-include]")
+            $.each(includes, function () {
+                var file = "/views/" + $(this).data("include") + ".html"
+                $(this).load(file)
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="/">Qinmo</a></h1>
+        <div data-include="header-external-buttons"></div>
+        <nav>
+            <a class="underlinedNav" href="/">Illustration</a>
+            <a class="" href="/books">Books</a>
+            <a class="" href="/animation">Animation</a>
+            <a class="" href="/about">About</a>
+        </nav>
+    </header>
+
+    <main data-include="illustration"></main>
+
+    <footer data-include="footer"></footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
