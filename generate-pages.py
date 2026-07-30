@@ -1,6 +1,6 @@
 def main():
     pageNames = ["illustration", "books", "animation", "about"]
-    templateFilePath = "index.html.template"
+    templateFilePath = "template.html"
 
     with open(templateFilePath, 'r') as file:
         templateFileContents = file.read()
