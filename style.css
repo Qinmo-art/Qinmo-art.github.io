@@ -2,6 +2,7 @@
     --main-color: #ffcad4;
     --main-color-hovered: #fbdae2;
     --navigation-link-color: hsla(229.71, 43.21%, 15.88%, 1);
+    --navigation-link-color-hovered: hsl(230, 43%, 28%);
     --page-padding: 3vw;
 }
 
@@ -19,6 +20,8 @@ header {
     padding-bottom: 1.1vw;
     padding-left: var(--page-padding);
     padding-right: var(--page-padding);
+
+    display: flex;
 }
 
 header>h1 {
@@ -41,10 +44,13 @@ header>nav {
     display: inline-block;
     text-align: center;
     inline-size: 33%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header>nav>a {
-    display: inline-block;
+    display: block;
     text-decoration: none;
     color: var(--navigation-link-color);
 
@@ -55,6 +61,12 @@ header>nav>a {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+
+    transition: color 0.2s;
+}
+
+header>nav>a:hover {
+    color: var(--navigation-link-color-hovered);
 }
 
 header>div {
@@ -67,18 +79,57 @@ header>div>a {
     display: inline-block;
 }
 
+.top-external-buttons-container {
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: inline-flex;
+    align-items: left;
+    justify-content: flex-end;
+}
+
+.top-external-buttons-left {
+    display: flex;
+    line-height: 1;
+    align-items: center;
+}
+
 .top-external-button {
     border-color: black;
     border-width: 1px;
     border-style: solid;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 1px inset;
+    margin-left: 1.5vw;
+    background-color: white;
+
+    padding: 10px;
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    box-sizing: content-box;
+    line-height: 1;
+
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.top-external-buttons-right {
+    text-align: center;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.top-external-button:hover {
+    border-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    background-color: var(--main-color-hovered);
 }
 
 .top-external-text-button {
     color: black;
     text-decoration: none;
-    margin-left: 1vw;
+    margin-left: 2vw;
     padding: 1vw;
     background-color: var(--main-color);
     border-radius: 2vw;
@@ -88,6 +139,7 @@ header>div>a {
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
+    display: block;
 
     transition: background-color 0.2s;
 }
@@ -115,4 +167,30 @@ footer>div>p {
 
 footer>div>div {
     margin-bottom: 3vw;
+}
+
+.bottom-external-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    justify-content: center;
+    column-gap: 12px;
+    row-gap: 12px;
+}
+
+.bottom-external-buttons>a {
+    width: 40px;
+    height: 40px;
+    fill: var(--navigation-link-color);
+
+    transition: fill 0.2s;
+}
+
+.bottom-external-buttons>a:hover {
+    fill: var(--navigation-link-color-hovered)
+}
+
+.bottom-external-buttons>div {
+    transform: scale(2);
 }
