@@ -4,6 +4,13 @@
     --navigation-link-color: hsla(229.71, 43.21%, 15.88%, 1);
     --navigation-link-color-hovered: hsl(230, 43%, 28%);
     --page-padding: 3vw;
+    --external-button-color: hsla(229.71, 43.21%, 15.88%, 1);
+    --external-button-color-hovered: hsl(230, 43%, 28%);
+}
+
+[data-theme="inverted"] {
+    --navigation-link-color: rgb(256, 256, 256);
+    --navigation-link-color-hovered: rgb(225, 225, 225);
 }
 
 body {
@@ -182,13 +189,13 @@ footer>div>div {
 .bottom-external-buttons>a {
     width: 40px;
     height: 40px;
-    fill: var(--navigation-link-color);
+    fill: var(--external-button-color);
 
     transition: fill 0.2s;
 }
 
 .bottom-external-buttons>a:hover {
-    fill: var(--navigation-link-color-hovered)
+    fill: var(--external-button-color-hovered)
 }
 
 .bottom-external-buttons>div {
