@@ -1,4 +1,5 @@
 :root {
+    --title-color: #ffcad4;
     --main-color: #ffcad4;
     --main-color-hovered: #fbdae2;
     --navigation-link-color: hsla(229.71, 43.21%, 15.88%, 1);
@@ -6,9 +7,11 @@
     --page-padding: 3vw;
     --external-button-color: hsla(229.71, 43.21%, 15.88%, 1);
     --external-button-color-hovered: hsl(230, 43%, 28%);
+    --top-heading-color: rgb(53, 13, 110);
 }
 
 [data-theme="inverted"] {
+    --title-color: #ffffff;
     --navigation-link-color: rgb(256, 256, 256);
     --navigation-link-color-hovered: rgb(225, 225, 225);
 }
@@ -39,7 +42,7 @@ header>h1 {
 }
 
 h1>a {
-    color: var(--main-color);
+    color: var(--title-color);
     text-decoration: none;
 
     font-family: "Ultra", serif;
@@ -153,6 +156,32 @@ header>div>a {
 
 .top-external-text-button:hover {
     background-color: var(--main-color-hovered);
+}
+
+.top-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -10;
+    border-bottom-left-radius: 50% 15%;
+    border-bottom-right-radius: 50% 15%;
+}
+
+.top-heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 200px;
+    padding-bottom: 300px;
+
+    font-family: "Ultra", serif;
+    font-size: 50px;
+    font-weight: normal;
+    font-style: normal;
+
+    color: var(--top-heading-color);
 }
 
 footer {
