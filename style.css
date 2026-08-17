@@ -337,3 +337,7 @@ main {
 .centered-video-container video {
     width: 100%;
 }
+
+.thinner-paragraph {
+    width: 500px
+}
