@@ -18,6 +18,11 @@
 
 body {
     margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .underlinedNav {
@@ -66,11 +71,6 @@ header>nav>a {
 
     margin-left: 1vw;
     margin-right: 1vw;
-
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
 
     transition: color 0.2s;
 }
@@ -144,7 +144,7 @@ header>div>a {
     background-color: var(--main-color);
     border-radius: 2vw;
 
-    font-family: "Rubik", sans-serif;
+    font-family: var(--regular-font), sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -194,10 +194,6 @@ footer>div {
 }
 
 footer>div>p {
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     font-size: 13px;
 }
 
@@ -277,19 +273,12 @@ main {
 }
 
 .section-content-paragraph {
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     line-height: 25px;
+    font-size: 18px;
 }
 
 .section-content-paragraph-top-heading {
     font-size: 20.32px;
-
-    font-family: "Ultra", serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .center-text-container {
@@ -327,11 +316,6 @@ main {
 
 .centered-video-container {
     margin: 20px 20% 100px 20%;
-
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .centered-video-container video {
@@ -364,11 +348,6 @@ main {
     width: 100%;
     display: block;
     margin: 5px;
-
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
 }
 
 #fullscreen-overlay {
