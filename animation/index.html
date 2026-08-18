@@ -12,6 +12,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ultra&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ultra&display=swap"
+        rel="stylesheet">
     <script src="/jquery-4.0.0.min.js"></script>
     <script>
         $(function () {
@@ -99,8 +102,13 @@
             </div>
         </div>
     </footer>
-
-    <script src="/script.js"></script>
+    <div id="fullscreen-overlay">
+        <div class="fullscreen-overlay-content">
+            <button id="fullscreen-overlay-right-button" class="fullscreen-overlay-direction-button">&gt;</button>
+            <button id="fullscreen-overlay-left-button" class="fullscreen-overlay-direction-button">&lt;</button>
+            <img id="fullscreen-overlay-image">
+        </div>
+    </div>
 </body>
 
 </html>
