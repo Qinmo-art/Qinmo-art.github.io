@@ -329,25 +329,27 @@ main {
 .image-gallery {
     margin-top: 40px;
     margin-bottom: 75px;
+    font-size: 0;
 }
 
 .image-gallery-column {
-    width: 33%;
+    width: 33.33%;
     height: auto;
     display: inline-block;
     vertical-align: top;
 }
 
 .image-gallery-column img {
-    width: 100%;
+    width: 99%;
     display: block;
-    margin: 5px;
+    padding: 0.5%;
 }
 
 .image-gallery-column p {
-    width: 100%;
+    width: 99%;
     display: block;
-    margin: 5px;
+    padding: 0.5%;
+    font-size: 16px;
 }
 
 #fullscreen-overlay {
@@ -426,3 +428,30 @@ main {
 body.overlay-open {
     overflow: hidden;
 }
+
+/* e.g. iPhone 16 Pro Max */
+@media (min-width: 0px) and (max-width: 600px) {
+    .image-gallery-column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* no examples found, but probably safe to copy above */
+@media (min-width: 600px) and (max-width: 768px) {
+    .image-gallery-column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* e.g. iPad Mini */
+@media (min-width: 768px) and (max-width: 992px) {
+    .image-gallery-column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* e.g. iPad Pro */
+@media (min-width: 992px) and (max-width: 1200px) {}
