@@ -25,7 +25,7 @@ body {
     font-style: normal;
 }
 
-.underlinedNav {
+#underlined-nav {
     text-decoration: underline;
     text-underline-offset: 8px;
 }
@@ -35,8 +35,6 @@ header {
     padding-bottom: 1.1vw;
     padding-left: var(--page-padding);
     padding-right: var(--page-padding);
-
-    display: flex;
 }
 
 header>h1 {
@@ -59,12 +57,17 @@ header>nav {
     display: inline-block;
     text-align: center;
     inline-size: 33%;
+    vertical-align: middle;
+    margin-bottom: 2%;
+}
+
+.nav-link-container {
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
-header>nav>a {
+.nav-link-container>a {
     display: block;
     text-decoration: none;
     color: var(--navigation-link-color);
@@ -75,7 +78,7 @@ header>nav>a {
     transition: color 0.2s;
 }
 
-header>nav>a:hover {
+.nav-link-container>a:hover {
     color: var(--navigation-link-color-hovered);
 }
 
@@ -429,27 +432,214 @@ body.overlay-open {
     overflow: hidden;
 }
 
+.hidden-on-pc {
+    display: none;
+}
+
 /* e.g. iPhone 16 Pro Max */
 @media (min-width: 0px) and (max-width: 600px) {
+    .hidden-on-pc {
+        display: initial;
+    }
+
+    header {
+        padding-top: 3%;
+    }
+
+    header>h1 {
+        display: inline-block;
+        inline-size: 50%;
+        margin: 0;
+        font-size: 42px;
+        vertical-align: middle;
+    }
+
+    header>nav {
+        display: block;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .nav-link-container {
+        width: 100%;
+    }
+
+    .nav-link-container>a {
+        display: block;
+        width: 25%;
+    }
+
+    .top-external-buttons-container {
+        display: inline-block;
+        inline-size: 49%;
+        vertical-align: middle;
+    }
+
+    .top-external-buttons-left {
+        display: inline-block;
+    }
+
+    .top-external-button {
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 50%;
+        margin-left: 1.5vw;
+        background-color: white;
+
+        padding: 10px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        box-sizing: content-box;
+        line-height: 1;
+    }
+
     .image-gallery-column {
         width: 100%;
         display: block;
+    }
+
+    .hidden-on-mobile {
+        display: none;
     }
 }
 
 /* no examples found, but probably safe to copy above */
 @media (min-width: 600px) and (max-width: 768px) {
+    .hidden-on-pc {
+        display: initial;
+    }
+
+    header {
+        padding-top: 3%;
+    }
+
+    header>h1 {
+        display: inline-block;
+        inline-size: 50%;
+        margin: 0;
+        font-size: 42px;
+        vertical-align: middle;
+    }
+
+    header>nav {
+        display: block;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .nav-link-container {
+        width: 100%;
+    }
+
+    .nav-link-container>a {
+        display: block;
+        width: 25%;
+    }
+
+    .top-external-buttons-container {
+        display: inline-block;
+        inline-size: 49%;
+        vertical-align: middle;
+    }
+
+    .top-external-buttons-left {
+        display: inline-block;
+    }
+
+    .top-external-button {
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 50%;
+        margin-left: 1.5vw;
+        background-color: white;
+
+        padding: 10px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        box-sizing: content-box;
+        line-height: 1;
+    }
+
     .image-gallery-column {
         width: 100%;
         display: block;
+    }
+
+    .hidden-on-mobile {
+        display: none;
     }
 }
 
 /* e.g. iPad Mini */
 @media (min-width: 768px) and (max-width: 992px) {
+    .hidden-on-pc {
+        display: initial;
+    }
+
+    header {
+        padding-top: 3%;
+    }
+
+    header>h1 {
+        display: inline-block;
+        inline-size: 50%;
+        margin: 0;
+        font-size: 42px;
+        vertical-align: middle;
+    }
+
+    header>nav {
+        display: block;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .nav-link-container {
+        width: 100%;
+    }
+
+    .nav-link-container>a {
+        display: block;
+        width: 25%;
+    }
+
+    .top-external-buttons-container {
+        display: inline-block;
+        inline-size: 49%;
+        vertical-align: middle;
+    }
+
+    .top-external-buttons-left {
+        display: inline-block;
+    }
+
+    .top-external-button {
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 50%;
+        margin-left: 1.5vw;
+        background-color: white;
+
+        padding: 10px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        box-sizing: content-box;
+        line-height: 1;
+    }
+
     .image-gallery-column {
         width: 100%;
         display: block;
+    }
+
+    .hidden-on-mobile {
+        display: none;
     }
 }
 

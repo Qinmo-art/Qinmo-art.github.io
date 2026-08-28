@@ -13,7 +13,7 @@ def main():
         }
 
         for pageNameForArgs in pageNames:
-            args["underlined_" + pageNameForArgs] = "underlinedNav" if pageNameForArgs == pageName else ""
+            args["underlined_" + pageNameForArgs] = "underlined-nav" if pageNameForArgs == pageName else ""
 
         fileContents = templateFileContents
 
