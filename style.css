@@ -436,7 +436,7 @@ body.overlay-open {
     display: none;
 }
 
-/* e.g. iPhone 16 Pro Max */
+/* e.g. iPhone 16 Pro Max and Galaxy S9+ */
 @media (min-width: 0px) and (max-width: 600px) {
     .hidden-on-pc {
         display: initial;
@@ -451,7 +451,6 @@ body.overlay-open {
         inline-size: 50%;
         margin: 0;
         font-size: 42px;
-        vertical-align: middle;
     }
 
     header>nav {
@@ -470,13 +469,14 @@ body.overlay-open {
     }
 
     .top-external-buttons-container {
-        display: inline-block;
-        inline-size: 49%;
-        vertical-align: middle;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 
     .top-external-buttons-left {
         display: inline-block;
+        margin-top: 7%;
     }
 
     .top-external-button {
@@ -484,7 +484,8 @@ body.overlay-open {
         border-width: 1px;
         border-style: solid;
         border-radius: 50%;
-        margin-left: 1.5vw;
+        margin-left: 0.75vw;
+        margin-right: 0.75vw;
         background-color: white;
 
         padding: 10px;
@@ -520,7 +521,6 @@ body.overlay-open {
         inline-size: 50%;
         margin: 0;
         font-size: 42px;
-        vertical-align: middle;
     }
 
     header>nav {
@@ -539,13 +539,14 @@ body.overlay-open {
     }
 
     .top-external-buttons-container {
-        display: inline-block;
-        inline-size: 49%;
-        vertical-align: middle;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 
     .top-external-buttons-left {
         display: inline-block;
+        margin-top: 7%;
     }
 
     .top-external-button {
@@ -553,7 +554,8 @@ body.overlay-open {
         border-width: 1px;
         border-style: solid;
         border-radius: 50%;
-        margin-left: 1.5vw;
+        margin-left: 0.75vw;
+        margin-right: 0.75vw;
         background-color: white;
 
         padding: 10px;
@@ -589,7 +591,6 @@ body.overlay-open {
         inline-size: 50%;
         margin: 0;
         font-size: 42px;
-        vertical-align: middle;
     }
 
     header>nav {
@@ -608,13 +609,14 @@ body.overlay-open {
     }
 
     .top-external-buttons-container {
-        display: inline-block;
-        inline-size: 49%;
-        vertical-align: middle;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 
     .top-external-buttons-left {
         display: inline-block;
+        margin-top: 7%;
     }
 
     .top-external-button {
@@ -622,7 +624,8 @@ body.overlay-open {
         border-width: 1px;
         border-style: solid;
         border-radius: 50%;
-        margin-left: 1.5vw;
+        margin-left: 0.75vw;
+        margin-right: 0.75vw;
         background-color: white;
 
         padding: 10px;
