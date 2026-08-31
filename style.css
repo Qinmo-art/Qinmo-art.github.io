@@ -246,33 +246,30 @@ main {
 }
 
 .content-mid-split {
-    margin: 0 4vw 0 4vw;
-
-    display: flex;
-    gap: 100px;
-    align-items: flex-start;
+    display: block;
 }
 
 .content-mid-split-element {
+    inline-size: 49.5%;
     display: inline-block;
+    vertical-align: middle;
 }
 
-.content-mid-split-element-left {
-    flex: 1;
-}
-
-.content-mid-split-element-left p {
+.content-mid-split-element p {
     text-align: left;
 }
 
-.content-mid-split-element-right {
-    flex: 0 0 500px;
-}
-
-.content-mid-split-element-right img {
+.content-mid-split-element img {
     width: 100%;
     height: auto;
-    display: block;
+}
+
+#himlen-book-img {
+    max-width: 500px;
+}
+
+.books-info-split-margins {
+    margin: 5% 10% 5% 10%;
 }
 
 .section-content-paragraph {
@@ -311,9 +308,10 @@ main {
 }
 
 .three-column-image-container img {
-    width: 26%;
+    width: 29%;
     height: auto;
-    padding: 0 50px 0 50px;
+    padding-left: 2%;
+    padding-right: 2%;
     display: inline-block;
 }
 
@@ -326,7 +324,7 @@ main {
 }
 
 .thinner-paragraph {
-    width: 500px
+    width: 100%;
 }
 
 .image-gallery {
@@ -438,6 +436,12 @@ body.overlay-open {
 
 /* e.g. iPhone 16 Pro Max and Galaxy S9+ */
 @media (min-width: 0px) and (max-width: 600px) {
+    [data-theme="inverted"] {
+        --title-color: #ffcad4;
+        --navigation-link-color: hsla(229.71, 43.21%, 15.88%, 1);
+        --navigation-link-color-hovered: hsl(230, 43%, 28%);
+    }
+
     .hidden-on-pc {
         display: initial;
     }
@@ -499,6 +503,47 @@ body.overlay-open {
     .image-gallery-column {
         width: 100%;
         display: block;
+    }
+
+    .top-background {
+        visibility: hidden;
+    }
+
+    .top-heading-container {
+        display: none;
+    }
+
+    .content-mid-split {
+        display: block;
+    }
+
+    .content-mid-split-element {
+        display: block;
+        width: 100%;
+    }
+
+    .content-mid-split-element img {
+        width: 100%;
+        height: auto;
+    }
+
+    #himlen-book-img {
+        max-width: 100%;
+    }
+
+    .books-info-split-margins {
+        margin: 10% 1% 1% 1%;
+    }
+
+    .three-column-image-container {
+        margin: 0;
+    }
+
+    .three-column-image-container img {
+        display: block;
+        width: 100%;
+        padding: 0;
+        display: inline-block;
     }
 
     .hidden-on-mobile {
@@ -508,6 +553,12 @@ body.overlay-open {
 
 /* no examples found, but probably safe to copy above */
 @media (min-width: 600px) and (max-width: 768px) {
+    [data-theme="inverted"] {
+        --title-color: #ffcad4;
+        --navigation-link-color: hsla(229.71, 43.21%, 15.88%, 1);
+        --navigation-link-color-hovered: hsl(230, 43%, 28%);
+    }
+
     .hidden-on-pc {
         display: initial;
     }
@@ -569,6 +620,47 @@ body.overlay-open {
     .image-gallery-column {
         width: 100%;
         display: block;
+    }
+
+    .top-background {
+        visibility: hidden;
+    }
+
+    .top-heading-container {
+        display: none;
+    }
+
+    .content-mid-split {
+        display: block;
+    }
+
+    .content-mid-split-element {
+        display: block;
+        width: 100%;
+    }
+
+    .content-mid-split-element img {
+        width: 100%;
+        height: auto;
+    }
+
+    #himlen-book-img {
+        max-width: 100%;
+    }
+
+    .books-info-split-margins {
+        margin: 10% 1% 1% 1%;
+    }
+
+    .three-column-image-container {
+        margin: 0;
+    }
+
+    .three-column-image-container img {
+        display: block;
+        width: 100%;
+        padding: 0;
+        display: inline-block;
     }
 
     .hidden-on-mobile {
@@ -644,7 +736,25 @@ body.overlay-open {
     .hidden-on-mobile {
         display: none;
     }
+
+    #himlen-book-img {
+        max-width: 100%;
+    }
 }
 
 /* e.g. iPad Pro */
-@media (min-width: 992px) and (max-width: 1200px) {}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .top-heading-container {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .three-column-image-container {
+        margin: 4% 8% 4% 8%;
+    }
+
+    .content-mid-split-element {
+        inline-size: 41.5%;
+        padding: 4%;
+    }
+}
