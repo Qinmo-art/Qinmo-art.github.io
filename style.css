@@ -272,6 +272,24 @@ main {
     margin: 5% 10% 5% 10%;
 }
 
+.about-split-margins {
+    margin: 5% 10% 5% 10%;
+}
+
+.about-split-left-padding {
+    inline-size: 39.5%;
+    padding-left: 5%;
+}
+
+.about-split-right-padding {
+    inline-size: 39.5%;
+    padding-right: 5%;
+}
+
+#profile-picture {
+    max-width: 500px;
+}
+
 .section-content-paragraph {
     line-height: 25px;
     font-size: 18px;
