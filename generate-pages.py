@@ -1,5 +1,5 @@
 def main():
-    pageNames = ["illustration", "books", "animation", "about"]
+    pageNames = ["illustration", "books", "animation", "commissions", "about"]
     templateFilePath = "template.html"
     invertedThemePages = ["books"]
 
@@ -22,7 +22,7 @@ def main():
 
         outputFilePath = pageName + "/index.html" if pageName != "illustration" else "index.html"
 
-        with open(outputFilePath, "w") as outputFile:
+        with open(outputFilePath, "w+") as outputFile:
             outputFile.write(fileContents)
 
 if __name__ == "__main__":
