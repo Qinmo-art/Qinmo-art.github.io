@@ -61,14 +61,8 @@ header>nav {
     margin-bottom: 2%;
 }
 
-.nav-link-container {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .nav-link-container>a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: var(--navigation-link-color);
 
@@ -265,6 +259,10 @@ main {
 }
 
 #himlen-book-img {
+    max-width: 500px;
+}
+
+.commission-img {
     max-width: 500px;
 }
 
@@ -480,13 +478,13 @@ body.overlay-open {
         width: 100%;
     }
 
-    .nav-link-container {
-        width: 100%;
-    }
-
     .nav-link-container>a {
         display: block;
-        width: 25%;
+        inline-size: 100%;
+        width: 100%;
+        height: 40px;
+        text-align: left;
+        padding-left: 20px;
     }
 
     .top-external-buttons-container {
@@ -530,6 +528,10 @@ body.overlay-open {
         display: none;
     }
 
+    #commission-heading {
+        font-size: 30px;
+    }
+
     .content-mid-split {
         display: block;
     }
@@ -545,6 +547,10 @@ body.overlay-open {
     }
 
     #himlen-book-img {
+        max-width: 100%;
+    }
+
+    .commission-img {
         max-width: 100%;
     }
 
@@ -625,13 +631,9 @@ body.overlay-open {
         width: 100%;
     }
 
-    .nav-link-container {
-        width: 100%;
-    }
-
     .nav-link-container>a {
-        display: block;
-        width: 25%;
+        display: inline-block;
+        width: 17%;
     }
 
     .top-external-buttons-container {
@@ -690,6 +692,10 @@ body.overlay-open {
     }
 
     #himlen-book-img {
+        max-width: 100%;
+    }
+
+    .commission-img {
         max-width: 100%;
     }
 
@@ -770,13 +776,9 @@ body.overlay-open {
         width: 100%;
     }
 
-    .nav-link-container {
-        width: 100%;
-    }
-
     .nav-link-container>a {
-        display: block;
-        width: 25%;
+        display: inline-block;
+        width: 17%;
     }
 
     .top-external-buttons-container {
@@ -838,6 +840,10 @@ body.overlay-open {
         max-width: 100%;
     }
 
+    .commission-img {
+        max-width: 100%;
+    }
+
     .books-info-split-margins {
         margin: 10% 1% 1% 1%;
     }
@@ -887,7 +893,7 @@ body.overlay-open {
 }
 
 /* e.g. iPad Pro */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1280px) {
     .top-heading-container {
         padding-top: 100px;
         padding-bottom: 50px;
@@ -904,5 +910,10 @@ body.overlay-open {
 
     .centered-video-container {
         margin: 100px 20% 250px 20%;
+    }
+
+    .nav-link-container>a {
+        display: inline-block;
+        height: 3vw;
     }
 }
