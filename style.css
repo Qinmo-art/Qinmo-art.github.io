@@ -236,7 +236,6 @@ main {
     font-style: normal;
 
     font-size: 54.88px;
-    margin-top: 7vw;
 }
 
 .content-mid-split {
@@ -270,8 +269,18 @@ main {
     margin: 5% 10% 5% 10%;
 }
 
-.about-split-margins {
+.commissions-info-split-margins {
     margin: 5% 10% 5% 10%;
+}
+
+.about-split-margins-horizontal {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.about-split-margins-vertical {
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .about-split-left-padding {
@@ -558,6 +567,10 @@ body.overlay-open {
         margin: 10% 1% 1% 1%;
     }
 
+    .commissions-info-split-margins {
+        margin: 10% 1% 1% 1%;
+    }
+
     #profile-picture {
         max-width: 100%;
     }
@@ -703,6 +716,10 @@ body.overlay-open {
         margin: 10% 1% 1% 1%;
     }
 
+    .commissions-info-split-margins {
+        margin: 10% 1% 1% 1%;
+    }
+
     #profile-picture {
         max-width: 100%;
     }
@@ -845,6 +862,10 @@ body.overlay-open {
     }
 
     .books-info-split-margins {
+        margin: 10% 1% 1% 1%;
+    }
+
+    .commissions-info-split-margins {
         margin: 10% 1% 1% 1%;
     }
 
